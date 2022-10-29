@@ -1,0 +1,67 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *        Page d'ajout des lieux       *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+.boutonConfirmationAjoutLieu {
+    position: absolute;
+    top: 31%;
+    /*position du bouton ajouter lieu modifié */
+    left: 5.5%;
+}
+
+.retourEditionPageAjoutLieu {
+    float: right;
+    position: fixed;
+    right: 163px;
+    bottom: 123px;
+}
+
+.formAjoutCreneau {
+    margin: 5px 20px;
+    width: 90%;
+    height: 40%;
+    background: none;
+    position: absolute;
+    top: 39%;
+}
+
+.listeCreneau {
+    overflow-x: auto;
+    margin: 5px 20px;
+    width: 80%;
+    background: none;
+    top: 15%;
+    position: relative;
+    border: 1px solid #171920;
+    padding: 1% 3%;
+    height: 90%;
+}
+
+.listeInfoCreneau {
+    width: 100%;
+    height: 15%;
+    DISPLAY: GRID;
+    grid-template-columns: 4% 12% 14% 7% 12% 7% 18% 4% 17% 4% 5%;
+    grid-template-rows: 64%;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+
+.champInfoCreneau {
+    background: none;
+    border: none;
+}
+
+.labelInfoCreneau {
+    margin-left: 12%;
+}
+
+.petitPlusAjouterCreneau {
+    width: 70%;
+    margin: -8% 67%;
+    height: 210%;
+}

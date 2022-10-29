@@ -1,0 +1,23 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *   Modifier une édition  existante   *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+.parametreLieu {
+    margin-top: 1%
+}
+
+#ajoutLigne {
+    margin-left: 7%;
+}
+
+#colorLieu {
+    cursor: pointer;
+    height: 30px;
+    POSITION: relative;
+    left: 1%;
+    top: 12%;
+}

@@ -1,0 +1,418 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *            Fichier CSS              *
+                                    *        Accueil, menu, header        *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+/* div fixées dans le haut ou à gauche de la page */
+.pageHaut {
+    position: fixed;
+    top: 0;
+    margin: 15px;
+    z-index: 2;
+}
+
+.pageGauche {
+    position: fixed;
+    left: 0;
+}
+
+.pageDroite {
+    position: fixed;
+    right: 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * *  PAGE ACCUEIL  * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* étendre le background de l'accueil */
+.fondAccueil {
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+/* * * * * * * * * * * * * * * *  DECORS QUI BOUGENT : fusée, planètes et soleil  * * * * * * * * * * * * * * * */
+
+.fusee {
+    width: 150px;
+    position: fixed;
+    animation-name: fusee;
+    /* nom animation */
+    animation-duration: 13s;
+    /* temps animation */
+    animation-iteration-count: infinite;
+    /* répétition animation */
+}
+
+@keyframes fusee {
+
+    /* ce qui se passe pendant l'animation */
+    0% {
+        left: 10%;
+        bottom: 0%;
+        transform: rotate(55deg);
+    }
+
+    20% {
+        left: 40%;
+        bottom: 30%;
+        transform: rotate(11deg);
+    }
+
+    40% {
+        left: 60%;
+        bottom: 65%;
+        transform: rotate(33deg);
+    }
+
+    60% {
+        left: 85%;
+        bottom: 100%;
+    }
+
+    100% {
+        left: 85%;
+        bottom: 100%;
+    }
+}
+
+.planete1 {
+    width: 54px;
+    position: fixed;
+    right: 25%;
+    animation-name: planete1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes planete1 {
+    0% {
+        top: 16%;
+    }
+
+    40% {
+        top: 13%;
+    }
+
+    80% {
+        top: 16%;
+    }
+
+    100% {
+        top: 16%;
+    }
+}
+
+.planete2 {
+    width: 44px;
+    position: fixed;
+    left: 14%;
+    animation-name: planete2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes planete2 {
+    0% {
+        top: 33%;
+    }
+
+    20% {
+        top: 33%;
+    }
+
+    60% {
+        top: 36%;
+    }
+
+    100% {
+        top: 33%;
+    }
+}
+
+.soleil1 {
+    width: 120px;
+    position: fixed;
+    right: 15%;
+    animation-name: soleil1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes soleil1 {
+    0% {
+        bottom: 15%;
+    }
+
+    35% {
+        bottom: 11%;
+    }
+
+    70% {
+        bottom: 15%;
+    }
+
+    100% {
+        bottom: 15%;
+    }
+}
+
+.soleil2 {
+    width: 72px;
+    position: fixed;
+    left: 8%;
+    animation-name: soleil2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes soleil2 {
+    0% {
+        bottom: 20%;
+    }
+
+    30% {
+        bottom: 24%;
+    }
+
+    65% {
+        bottom: 20%;
+    }
+
+    100% {
+        bottom: 20%;
+    }
+}
+
+/* Gros Logo du début qui disparaît */
+.grosLogo {
+    width: 45%;
+    position: fixed;
+    top: 30%;
+    right: 27%;
+    animation-name: grosLogo;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes grosLogo {
+    0% {
+        opacity: 100%;
+    }
+
+    57% {
+        opacity: 100%;
+    }
+
+    76% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* * * * * * * * * * * * * * * *  ESPACE PRINCIPAL AVEC LE FORMULAIRE  * * * * * * * * * * * * * * * */
+
+.arriereConnexion {
+    display: none;
+    /* Caché par défaut */
+    position: fixed;
+    /* Ne bouge pas */
+    z-index: 1;
+    /* Placé devant */
+    left: 0;
+    top: 0;
+    overflow: auto;
+    margin-top: 100px;
+    display: block;
+}
+
+.rectangleFormApparition {
+    margin: 6% auto 15% auto;
+    width: 50%;
+    box-shadow: 0 0 15px 0 rgba(255, 254, 230, 0.7);
+    border: none;
+
+    /* animation de l'apparition en zoom */
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Image Logo LBR */
+.imageLogoLBR {
+    text-align: center;
+    position: relative;
+}
+
+/* Formulaire type text à remplir */
+.inputConnexionAdmin {
+    display: inline-block;
+    box-sizing: border-box;
+    border-style: none none solid none;
+    background: none;
+    position: relative;
+}
+
+/* Bouton pour le connecter */
+.boutonMeConnecterAdmin {
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: -5px 5px 9px rgba(22, 25, 32, 0.29);
+
+}
+
+.boutonMeConnecterAdmin:hover {
+    opacity: 0.8;
+}
+
+/* Placement du bouton pour réinitialiser son mot de passe */
+.mdpOublie {
+    position: relative;
+    left: 77%;
+    top: 10px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * *  FORMULAIRE SI MOT DE PASSE OUBLIE  * * * * * * * * * * * * * * * * * * */
+
+.rectangleMdpOublie {
+    padding: 3%;
+    width: 52%;
+    margin: 10% 23%;
+    height: 60%;
+    z-index: 1;
+    position: relative;
+}
+
+.fermerMdpOublie {
+    float: right;
+    transform: scale(2);
+}
+
+/* * * * * * * * * * * * * * * * * * * * *  MENU OVERLAY  * * * * * * * * * * * * * * * * * * * * */
+
+/* Menu qui recouvre la page */
+.overlayMenu {
+    height: 100%;
+    /* recouvre la totalité */
+    width: 0;
+    z-index: 10;
+    /* au dessus de tout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    /* opaque */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayMenu-content {
+    /* ce qui est dans le menu */
+    gap: 40px;
+    flex-grow: 1;
+    position: relative;
+    margin: 40px 40px 0;
+    padding: 0 40px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-left: 1px solid var(--light);
+    transition: all 2s ease;
+    transform-origin: top;
+    display: flex;
+}
+
+/* les propositions du menu */
+.overlayMenu a,
+.overlayMenu button {
+    padding: 8px;
+    padding-top: 30px;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* bouton pour fermer le menu */
+.overlayMenu .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 60px;
+    padding: 0;
+}
+
+/* écriture MENU tournée à gauche */
+.decoMenu {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    font-size: 14px;
+    transform: rotate(270deg) translate(-100%, -5px);
+    text-transform: uppercase;
+    transform-origin: top left;
+}
+
+/* bouton de proposition du menu pour redirection */
+.choixMenu {
+    height: min-content;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    width: 100%;
+    padding: 0;
+}
+
+.propositionMenu {
+    text-transform: uppercase;
+    align-items: flex-end;
+    display: flex;
+    font-weight: 800;
+}
+
+.propositionMenu:hover {
+    text-decoration: none;
+}
+
+.spanMenu {
+    margin-right: 30px;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.imageMenu {
+    margin: auto 0;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+}
+
+.accesMenu {
+    font-size: 25px;
+    cursor: pointer;
+}

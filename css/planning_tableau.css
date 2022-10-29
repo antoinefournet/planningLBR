@@ -1,0 +1,150 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *  des plannings et de leur tableau   *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+/* * * * * * * * * * * * * * * * * * *  TABLEAUX  * * * * * * * * * * * * * * * * * * */
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 6px;
+}
+
+/* * * * * * * * * * * * * * * * * * *  TABLEAU GENERAL  * * * * * * * * * * * * * * * * * * */
+
+#tableau {
+    transform: scale(0.8);
+    margin: 0;
+    transform-origin: 0 0;
+    min-width: 100%;
+}
+
+/* chaque ligne du tableau général au survol */
+#tableau tr:hover td button,
+#tableau tr:hover td p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* fixation des colones/liges d'entete */
+.stickyActive {
+    position: sticky;
+}
+
+/* * * * * * * * * * * * * * * * * * *  DISPOSITION DANS LA PLAGE  * * * * * * * * * * * * * * * * * * */
+
+/*--- Disposition générale des plannings ---*/
+.rectanglePlanning {
+    width: 86%;
+    height: 72%;
+    position: absolute;
+    margin: 1%;
+    left: 7%;
+}
+
+/* * * * * * * * * * * * * * * * * * *  CURSEUR DU ZOOM  * * * * * * * * * * * * * * * * * * */
+
+/* div qui contient le curseur */
+.curseurBox {
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: rotate(-90deg);
+}
+
+.curseur {
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 8;
+    transition: opacity .2s;
+}
+
+.curseur:hover::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+}
+
+.curseur::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #EA001C;
+    cursor: pointer;
+}
+
+.curseur::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    background: #EA001C;
+    cursor: pointer;
+}
+
+.curseurIcone {
+    transform: rotate(90deg);
+}
+
+/* * * * * * * * * * * * * * * * * * *  CHECK POUR BLOQUER LE ZOOM  * * * * * * * * * * * * * * * * * * */
+
+.checkBox {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    transform: rotate(-90deg);
+}
+
+/* * * * * * * * * * * * * * * * * * *  PAGE PLANNING GENERAL  * * * * * * * * * * * * * * * * * * */
+
+/* bouton télécharger le PDF */
+.pdfGeneral {
+    position: absolute;
+    top: 83%;
+    left: 1%;
+    font-weight: 550;
+    font-size: 15px;
+    transform: rotate(-90deg);
+}
+
+/* Menu si on clique sur une case vide */
+.modalCase {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 7;
+}
+
+/* lorsqu'on clique sur une case vide */
+.interieurModalCase {
+    margin-top: 13%;
+    width: 64%;
+    padding: 2%;
+    height: 60%;
+    position: absolute;
+    left: 18%;
+}
+
+/* Le bouton pour fermer les modaux */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.5
+}
+
+.close:hover,
+.close:focus {
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}

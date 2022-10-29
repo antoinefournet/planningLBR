@@ -1,0 +1,64 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *  Page Modèle avec rectangle jaune   *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+
+/* Sous-Titre dans rectangle */
+.sousTitre {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 38px;
+    margin: 1.5% 2%;
+}
+
+.sousTitreCentre {
+    text-align: center;
+}
+
+/* Formulaire Modifier Compte Admin */
+.labelForm {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 130%;
+    margin-left: 4%;
+}
+
+.premierLabelForm {
+    margin-top: 5%
+}
+
+.inputForm {
+    width: 90%;
+    border-style: none none solid none;
+    margin-left: 4%;
+    margin-bottom: 1%;
+    padding: 0px;
+    background: none;
+}
+
+.grandInputForm {
+    font-size: 70px;
+    text-align: center;
+    border-style: none;
+}
+
+.positionFormInitialisation {
+    position: relative;
+    top: 65px;
+}
+
+.boutonRougeGauche {
+    position: relative;
+    top: 65px;
+    left: 965px;
+}
+
+.boutonRougeDroit {
+    position: relative;
+    top: 65px;
+    left: 995px;
+}

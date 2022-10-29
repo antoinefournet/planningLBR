@@ -1,0 +1,97 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *            Fichier CSS              *
+                                    *      Elements communs partout       *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+/* Elements créateur des pages */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *  LES BOUTONS  * * * * * * * * * * * * * * * * * * * * */
+
+/* enlever le style par défaut */
+.boutonSansFond {
+    border: none;
+    background: none;
+}
+
+.aSansFond {
+    text-decoration: none;
+}
+
+/* lorsqu'on hover n'importe quel bouton */
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.spanHover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.boutonRouge {
+    box-shadow: -5px 5px 9px rgb(22 25 32 / 29%);
+    padding: 6px 13px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* ajuster la taille en fonction de l'élément parent */
+.tailleComplete {
+    height: 100%;
+    width: 100%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *  LES ECRITURES  * * * * * * * * * * * * * * * * * * * * */
+
+/* Titre principal en gros en haut centré */
+.titrePrincipal {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -5px 8px 6px rgba(234, 0, 28, 0.72);
+}
+
+/* écriture majuscule avec les ombres rouges */
+.ecritureOmbreRouge {
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -5px 8px 6px rgba(234, 0, 28, 0.72);
+}
+
+/* * * * * * * * * * * * * * * * * * * * *  LES DIV ET EMPLACEMENTS  * * * * * * * * * * * * * * * * * * * * */
+
+/* Arrière plan qui contient tout de la page */
+.arrierePlanRectangle {
+    margin-top: 4%;
+}
+
+/* Espace principal et central de la page */
+.rectangleJaune {
+    width: 84%;
+    height: 60%;
+    position: absolute;
+    margin: 3%;
+    left: 5%;
+}

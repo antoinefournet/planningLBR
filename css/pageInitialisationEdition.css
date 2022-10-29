@@ -1,0 +1,154 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *  Page Initialisation d'une édition  *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+
+.boutonAnnulerInitialisation {
+    position: absolute;
+    top: 26%;
+    right: 8%;
+    text-transform: uppercase;
+}
+
+
+/*----- Slide 2 : Ajout lieu -----*/
+
+.boutonSelectLieu {
+    width: 150px;
+    height: 150px;
+    border-radius: 0px;
+    margin: 11px;
+}
+
+.iconePlusLieu {
+    position: relative;
+    font-size: 140px;
+    top: 6%;
+    right: 0%;
+}
+
+.divBoutonLieu {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.supprimerLieu {
+    background: none;
+    border: none;
+    display: none;
+    position: relative;
+    bottom: 104%;
+    left: 9%;
+}
+
+
+
+
+/*----- Slide 3 : Ajout membres -----*/
+.moyenLabelFormInitialisationSlide3 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*formulaire d'ajout de personnes*/
+.formAjoutPersonne {
+    /*Position du formulaire */
+    margin: 5px 20px;
+    width: 97%
+}
+
+.ajoutManuelPosition {
+    margin: 0% 2%
+}
+
+.ligneInfoPersonne {
+    border-style: none none solid none;
+    margin-top: 2%;
+    display: flex;
+    flex: auto;
+    border-width: thin;
+}
+
+.champInitialisationPersonne {
+    background: none;
+    border: none;
+    margin-right: 1%;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+.champInitialisationMail {
+    width: 20%;
+}
+
+.positionInfoComplementaire {
+    height: 37%;
+    position: absolute;
+    top: 55%;
+    width: 33%;
+    left: 3%;
+}
+
+.boxInfoComplementaire {
+    resize: none;
+    position: absolute;
+    top: 13%;
+    border: solid;
+    border-width: thin;
+    width: 80%;
+    height: 55%;
+}
+
+
+.boutonAjouterPersonne {
+    position: absolute;
+    top: 73%;
+}
+
+.champsObligatoires {
+    position: absolute;
+    top: 81%;
+    left: 57%;
+    font-size: 11px;
+}
+
+.formImporterFichier {
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    width: 35%;
+    height: 34%;
+}
+
+.boutonEnregistrerEdition {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+}
+
+.tailleInfo {
+    font-size: 17px;
+    width: 68%;
+}
+
+.petiteEcritureOmbre {
+    font-weight: 800;
+    font-size: 18px;
+    text-shadow: -5px 8px 6px rgba(234, 0, 28, 0.72);
+    text-transform: uppercase;
+    margin: 5% 4%;
+}
+
+.boutonChoixEdition {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}

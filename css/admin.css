@@ -1,0 +1,61 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *   Ce qui est lié aux pages Admin    *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+
+/**** PAGE MENU *****/
+
+
+.decalageBoutonSelectAdmin {
+    left: 5%;
+    top: 110px;
+}
+
+.iconePlusAdmin {
+    font-size: 250px;
+    position: relative;
+    top: 18px;
+}
+
+/***** PAGE MODIFICATION ADMIN *****/
+
+/* Placement des boutons en fonction de la page */
+.boutonRougeGaucheModif {
+    position: absolute;
+    top: 85%;
+    left: 64%;
+}
+
+.boutonRougeDroitModif {
+    position: absolute;
+    top: 85%;
+    left: 74%;
+}
+
+.decalageDu1eLabel {
+    margin-top: -1%;
+}
+
+/***** PAGE CREATION ADMIN *****/
+
+/* Placement des boutons en fonction de la page */
+.boutonRougeDroitCreation {
+    position: absolute;
+    top: 87%;
+    left: 84%;
+}
+
+.boutonRougeGaucheCreation {
+    position: absolute;
+    top: 87%;
+    left: 74%;
+}
+
+/* Décalage du champs identifiant */
+.inputFormCreation {
+    margin-bottom: 0.5%;
+}

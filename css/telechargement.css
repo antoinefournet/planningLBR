@@ -1,0 +1,36 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *     Téléchargement de fichiers      *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+/* Page erreur de téléchargement */
+.positionTxtPrincipal {
+    position: absolute;
+    width: 100%;
+    TOP: 29%;
+}
+
+.PetitTxtEtBouton {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 22px;
+}
+
+.positionBoutonBasDroite {
+    position: absolute;
+    top: 85%;
+    LEFT: 77%;
+}
+
+.envoiMail {
+    display: grid;
+    width: 26%;
+    position: absolute;
+    top: 5%;
+    left: 36%;
+    ;
+}

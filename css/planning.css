@@ -1,0 +1,55 @@
+/*                                  * * * * * * * * * * * * * * * * * * * *
+                                    *                                     *
+                                    *             Fichier CSS             *
+                                    *             Les planning            *
+                                    *                                     *
+                                    * * * * * * * * * * * * * * * * * * * *    
+*/
+
+
+/*--- Page planning personne ---*/
+
+.ModifierInfoPersonne {
+    height: 100%;
+}
+
+
+.champModifierPersonne {
+    background: none;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+
+.champModifierPersonneHaut {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.champModifierPersonneBas {
+    background: none;
+    margin-bottom: 2%;
+}
+
+.blocModifierInfoHaut {
+    display: grid;
+    position: relative;
+    top: 5%;
+}
+
+.blocModifierInfoBas {
+    position: relative;
+    top: 0%;
+    margin-left: 3%;
+    display: inline-grid;
+    width: 97%;
+}
+
+.champBas {
+    width: 92%;
+    margin-bottom: 1%;
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(68%) saturate(408%) hue-rotate(12deg) brightness(107%) contrast(107%);
+}
